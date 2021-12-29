@@ -19,7 +19,7 @@ export const Shipment = ({ userInfo }) => {
           query { 
             user(id:${userInfo.id}){
               name
-              shipments(first:10, page: ${page}){
+              shipments(first:8, page: ${page}){
                       paginatorInfo {
                       total
                       currentPage
@@ -55,7 +55,7 @@ export const Shipment = ({ userInfo }) => {
           query { 
             user(id:${userInfo.id}){
               name
-              shipments(first:10, page: ${page}){
+              shipments(first:8, page: ${page}){
                       paginatorInfo {
                       total
                       currentPage
